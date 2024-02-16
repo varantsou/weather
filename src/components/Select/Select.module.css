@@ -1,0 +1,37 @@
+.selectContainer {
+    position: relative;
+    width: 100%;
+}
+
+.customSelect {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    z-index: 1;
+    color: #000;
+}
+
+.customSelect:focus {
+    outline: none;
+    border-color: #a3a3a3;
+}
+
+
+.selectContainer::after {
+    content: '⌵';
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+    color: #a3a3a3;
+    z-index: 2;
+}

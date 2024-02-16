@@ -1,0 +1,15 @@
+.property {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.value {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.name {
+    color: grey;
+    font-size: 14px;
+}
